@@ -1,0 +1,10 @@
+<form>
+  <input type="text" placeholder="new item"/>
+  <input type="submit" placeholder="add item"/>
+</form>
+
+<ul>
+  <li ng-repeat="item in fireCtrl.todo" ng-class="{ 'completed': !item.completed }" ng-click="fireCtrl.toggle.completed">
+    {{ item.name }}
+  </li>
+</ul>

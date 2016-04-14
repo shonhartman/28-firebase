@@ -1,0 +1,5 @@
+* {
+  background-color: lightblue; }
+
+.completed {
+  text-decoration: line-through; }
