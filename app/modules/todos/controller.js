@@ -1,5 +1,6 @@
 class FireTestController {
   constructor($firebaseArray, $firebaseObject) {
+    // console.log("in the controller");
     let ref = new Firebase("https://dazzling-fire-3687.firebaseio.com/todo")
     this.list = $firebaseArray(ref);
     this.item = "";
@@ -10,6 +11,7 @@ class FireTestController {
       name: this.item,
       completed: false
     });
+    // console.log("add to list");
 
   }
 
