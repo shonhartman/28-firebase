@@ -1,0 +1,12 @@
+<h1>HELLO</h1>
+<form ng-submit="fireCtrl">
+  <input type="text" placeholder="new item" ng-model="fireCtrl"/>
+  <input type="submit" placeholder="add item"/>
+</form>
+
+<ul>
+  <li ng-repeat="item in fireCtrl.todo" ng-class="{ 'completed': item.completed }" ng-click="fireCtrl.toggleCompleted(item)">
+    {{ item.name }}
+    <i class="fa fa-times" aria-hidden="true" ng-click="fireCtrl.toggle.completed"></i>
+  </li>
+</ul>

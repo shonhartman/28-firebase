@@ -5,8 +5,8 @@ import controller from './controller';
 
 let firetodos = angular.module('tiy.todos', []);
 
-todos.config(config);
-todos.controller('FireTestController', firetestController);
+firetodos.config(config);
+firetodos.controller('FireTestController', controller);
 
 
-export default index;
+export default firetodos;
