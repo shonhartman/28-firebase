@@ -1,12 +1,24 @@
-<h1>HELLO</h1>
-<form ng-submit="fireCtrl.addToList()">
-  <input type="text" placeholder="new item" ng-model="fireCtrl.item"/>
-  <input type="submit" placeholder="add item"/>
-</form>
+<h1>To-Do List</h1>
 
-<ul>
-  <li ng-repeat="item in fireCtrl.list" ng-class="{ 'completed': item.completed }" ng-click="fireCtrl.toggleCompleted(item)">
-    {{ item.name }}
-    <i class="fa fa-times" aria-hidden="true" ng-click="fireCtrl.toggle.completed"></i>
-  </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <form ng-submit="fireCtrl.addToList()">
+      <input type="text" class="col-xs-8 col-sm-9" ng-model="fireCtrl.item">
+      <div class="input-buttons col-xs-4 col-sm-3">
+        <a href="#" class="clear-text"><i class="fa fa-trash-o fa-2x"></i></a>
+        <a href="#" class="add-todo"><i class="fa fa-plus fa-2x"></i></a>
+      </div> <!-- div.input-buttons-->
+    </form>
+  </div> <!-- div.row -->
+  <div class="row">
+    <div class="error">
+    </div> <!-- div.error -->
+    <!-- Start to-do list -->
+    <ul class="todo-list col-xs-12">
+      <li ng-repeat="item in fireCtrl.list" ng-class="{ 'completed': item.completed }" ng-click="fireCtrl.toggleCompleted(item)">
+        {{ item.name }}
+        <i class="fa fa-times" aria-hidden="true" ng-click="fireCtrl.toggle.completed"></i>
+      </li>
+    </ul>
+  </div> <!-- div.row -->
+</div> <!-- div.container -->

@@ -1,3 +1,14 @@
-* {
-  background-color: lightblue;
+body {
+  background: $dark-gray;
+  color: $white;
+  font: {
+    family: 'Lato', sans-serif;
+    weight: 300;
+  }
+}
+
+h1 {
+  font: 72px 'Oswald', Arial, sans-serif;
+  margin: 50px 0;
+  text-align: center;
 }
