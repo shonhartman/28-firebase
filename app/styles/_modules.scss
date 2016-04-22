@@ -16,25 +16,34 @@
   }
   @media (min-width: 600px) {
     .fa-trash-o:hover {
-      color: $red;
+      color: $action;
     }
     .fa-plus:hover {
-      color: #69f0ae;
+      color: $green;
     }
   }
 }
 
-.todo-list{
+.todo-list {
   padding: 0;
   margin: 20px 0 50px;
-  .todo {
-    background: $white;
-    border-bottom: 1px dotted $dark-gray;
-    color: $dark-gray;
-    font-size: 20px;
-    list-style: none;
-    padding: 20px 130px 20px 15px;
-    position: relative;
-    white-space: normal;
+}
+
+#todo {
+  background-color: $white;
+  border-bottom: 1px dotted $brand-color;
+  color: $brand-color;
+  font-size: 20px;
+  list-style: none;
+  padding: 20px 130px 20px 15px;
+  position: relative;
+  white-space: normal;
+}
+
+.complete {
+  color: $background;
+  text-decoration: line-through;
+  .check {
+    color: $green;
   }
 }

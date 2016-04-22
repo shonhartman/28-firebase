@@ -1,5 +1,5 @@
 body {
-  background: $dark-gray;
+  background: $brand-color;
   color: $white;
   font: {
     family: 'Lato', sans-serif;
@@ -34,18 +34,18 @@ span {
   top: 15px;
   right: 0;
   a {
-    color: $dark-gray;
+    color: $brand-color;
   }
   i{
     padding: 10px 15px;
   }
   .fa-check {
-    border-right: 1px solid $dark-gray;
+    border-right: 1px solid $brand-color;
     &:hover {
       color: $green;
     }
   }
   .fa-trash-o:hover {
-    color: $red;
+    color: $action;
   }
 }

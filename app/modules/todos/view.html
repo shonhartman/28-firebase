@@ -11,12 +11,15 @@
     </form>
   </div> <!-- div.row -->
   <div class="row">
-    
+
     <!-- Start to-do list -->
     <ul class="todo-list col-xs-12">
-      <li ng-repeat="item in fireCtrl.list" ng-class="{ 'completed': item.completed }" ng-click="fireCtrl.toggleCompleted(item)">
+      <li ng-repeat="item in fireCtrl.list" id="todo" ng-class="{ 'completed': item.completed }">
         {{ item.name }}
-        <i class="fa fa-times" aria-hidden="true" ng-click="fireCtrl.toggle.completed"></i>
+        <span>
+      		<a href="#" class="check"><i class="fa fa-check fa-lg" ng-click="fireCtrl.toggleCompleted(item)"></i></a>
+      		<a href="#" class="delete-todo"><i class="fa fa-trash-o fa-lg" ng-click="fireCtrl.removeItem(item)"></i></a>
+      	</span>
       </li>
     </ul>
   </div> <!-- div.row -->

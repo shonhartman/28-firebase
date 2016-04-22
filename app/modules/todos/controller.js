@@ -17,15 +17,17 @@ class FireTestController {
 
   removeItem(item) {
     this.list.$remove(item);
-			// this.item.splice(this.item.indexOf(list), 1);
+		// this.item.splice(this.item.indexOf(this.list), 1);
 			// console.log("splice");
 
 
   }
 
   toggleCompleted(item) {
+    console.log("wtf")
     // if (item.completed) {
       item.completed = !item.completed;
+      console.log(item);
       // console.log(item);
       this.list.$save(item);
       // console.log(this.item);
