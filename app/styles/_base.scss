@@ -28,3 +28,24 @@ input {
     font-size: 32px;
   }
 }
+
+span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  a {
+    color: $dark-gray;
+  }
+  i{
+    padding: 10px 15px;
+  }
+  .fa-check {
+    border-right: 1px solid $dark-gray;
+    &:hover {
+      color: $green;
+    }
+  }
+  .fa-trash-o:hover {
+    color: $red;
+  }
+}

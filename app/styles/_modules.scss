@@ -24,24 +24,17 @@
   }
 }
 
-.error {
-  color: $red;
-  display: none;
-  font-size: 16px;
-  margin-top: 20px;
-  text-align: center;
-  .fa-times{
-    color: $white;
-    padding: 5px 15px;
-    float: right;
-    &:hover {
-      color: #fafafa;
-    }
-  }
-  p {
-    margin: 20px 0;
-    @media (min-width: 600px ){
-      font-size: 20px;
-    }
+.todo-list{
+  padding: 0;
+  margin: 20px 0 50px;
+  .todo {
+    background: $white;
+    border-bottom: 1px dotted $dark-gray;
+    color: $dark-gray;
+    font-size: 20px;
+    list-style: none;
+    padding: 20px 130px 20px 15px;
+    position: relative;
+    white-space: normal;
   }
 }
