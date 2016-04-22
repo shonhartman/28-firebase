@@ -9,6 +9,19 @@ h1 {
   margin: 50px 0;
   text-align: center; }
 
+input {
+  background: transparent;
+  border: none;
+    border-bottom: 1px solid #eceff1;
+  font-size: 24px;
+  height: 50px;
+  padding-bottom: 15px; }
+  input:focus {
+    outline: 0; }
+  @media (min-width: 900px) {
+    input {
+      font-size: 32px; } }
+
 .container {
   margin: 0 auto;
   width: 95%; }
@@ -21,3 +34,37 @@ h1 {
 
 .completed {
   text-decoration: line-through; }
+
+.input-buttons {
+  height: 50px;
+  border-bottom: 1px solid #eceff1;
+  padding: 0; }
+  .input-buttons i {
+    padding: 0 12px;
+    color: #eceff1;
+    float: right; }
+  .input-buttons .fa-plus {
+    border-right: 1px solid #eceff1; }
+  @media (min-width: 600px) {
+    .input-buttons .fa-trash-o:hover {
+      color: #ff5252; }
+    .input-buttons .fa-plus:hover {
+      color: #69f0ae; } }
+
+.error {
+  color: #ff5252;
+  display: none;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center; }
+  .error .fa-times {
+    color: #eceff1;
+    padding: 5px 15px;
+    float: right; }
+    .error .fa-times:hover {
+      color: #fafafa; }
+  .error p {
+    margin: 20px 0; }
+    @media (min-width: 600px) {
+      .error p {
+        font-size: 20px; } }

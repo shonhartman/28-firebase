@@ -12,3 +12,19 @@ h1 {
   margin: 50px 0;
   text-align: center;
 }
+
+input {
+  background: transparent;
+  border: none {
+    bottom: $white-border;
+  }
+  font-size: 24px;
+  height: 50px;
+  padding-bottom: 15px;
+  &:focus {
+    outline: 0;
+  }
+  @media (min-width: 900px) {
+    font-size: 32px;
+  }
+}
